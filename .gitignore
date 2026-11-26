@@ -1,0 +1,41 @@
+# game-derived or bulky: never commit
+ref/
+gen/
+gen.new/
+gen.old/
+build/
+work/
+out/
+*.exe
+*.dll
+*.gpak
+*.so
+*.apk
+*.o
+*.oxx
+# third-party sources are fetched (see README), not vendored
+third_party/dl/
+third_party/SDL3-*/
+third_party/glslang-*/
+third_party/SPIRV-Cross-*/
+third_party/miniz/
+third_party/stb/
+# android build outputs
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/app/src/main/jniLibs/
+third_party/pcrecomp/
+tools/local.env
+*.jks
+*.keystore
+ref/
+gen.new/
+third_party/dxvk-native/
+# DXVK runtime output
+*_d3d9.log
+*_d3d11.log
+*_dxgi.log
+*.dxvk-cache
+third_party/libvpx-*/

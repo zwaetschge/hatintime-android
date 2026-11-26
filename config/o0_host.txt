@@ -1,0 +1,2 @@
+HatinTimeGame/recomp_funcs_0000
+HatinTimeGame/recomp_funcs_0035
