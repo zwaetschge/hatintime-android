@@ -635,7 +635,7 @@ int w64_load(const char *gamedir)
         uint8_t *pp = calloc(1, 0x800);      /* RTL_USER_PROCESS_PARAMETERS */
         uint32_t ml = 0x800;
         memcpy(pp, &ml, 4); memcpy(pp + 4, &ml, 4);
-        static uint16_t img[] = u"C:\\Game\\HouseParty.exe", cmd[] = u"\"C:\\Game\\HouseParty.exe\"", cwd[] = u"C:\\Game\\";
+        static uint16_t img[] = u"C:\\Game\\Binaries\\Win64\\HatinTimeGame.exe", cmd[] = u"\"C:\\Game\\Binaries\\Win64\\HatinTimeGame.exe\"", cwd[] = u"C:\\Game\\Binaries\\Win64\\";
         uint16_t l;
         uint64_t q;
         l = (uint16_t)(sizeof img - 2); memcpy(pp + 0x60, &l, 2); l += 2; memcpy(pp + 0x62, &l, 2); q = (uint64_t)(uintptr_t)img; memcpy(pp + 0x68, &q, 8);

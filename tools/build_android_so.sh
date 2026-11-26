@@ -1,6 +1,6 @@
 #!/bin/sh
 # Build libmain.so + libSDL3.so for arm64-v8a with the NDK and drop them into jniLibs.
-#   tools/build_android_so.sh [ninja-target...]          (in hp-gfx:1, SDK at $ANDROID_SDK)
+#   tools/build_android_so.sh [ninja-target...]          (in hatintime-build, SDK at $ANDROID_SDK)
 # Needs: gen/ (tools/lift_module.sh), gen/modules_table.c (tools/build_host.sh writes it),
 #        build/dxvk-src (tools/build_dxvk.sh prepares it).
 # env: ANDROID_SDK (default /sdk), GUEST_OPT (default "-O2;-march=armv8.2-a"), JOBS (default 14)

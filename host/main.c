@@ -1,8 +1,8 @@
 /*
- * main.c - Linux debug host: maps HouseParty.exe and its lifted DLLs from the game directory and
+ * main.c - Linux debug host: maps Binaries/Win64/HatinTimeGame.exe from the game directory and
  * runs the recompiled code.
  *
- * usage: hphost <game dir with HouseParty.exe> [user dir]
+ * usage: hathost <game dir> [user dir]
  * env:   W64_TRACE=1|2|3, W64_LOGFILE, W64_ARGS, W64_ENV, W64_TIMEOUT (s), W64_HARD_IMPORTS=1
  */
 #define _GNU_SOURCE

@@ -259,7 +259,7 @@ static void GetEnvironmentStringsW_(CPU *c)
 }
 static void FreeEnvironmentStringsW_(CPU *c) { free(AP(0)); RET(1); }
 
-static const char *exe_win = "C:\\Game\\HouseParty.exe";
+static const char *exe_win = "C:\\Game\\Binaries\\Win64\\HatinTimeGame.exe";
 static char *g_cmdline_a;
 static uint16_t *g_cmdline_w;
 static void cmdline_init(void)

@@ -16,13 +16,13 @@ android {
     // libmain.so (runtime + lifted game code + DXVK) and libSDL3.so are prebuilt with the NDK from the
     // player's own A Hat in Time files by tools/build_android_so.sh.
     packaging { jniLibs { useLegacyPackaging = true } }
-    val ks = System.getenv("HP_KEYSTORE")
+    val ks = System.getenv("HAT_KEYSTORE") ?: System.getenv("HP_KEYSTORE")
     signingConfigs {
         if (ks != null) create("own") {
             storeFile = file(ks)
-            storePassword = System.getenv("HP_KEYSTORE_PASSWORD")
-            keyAlias = System.getenv("HP_KEY_ALIAS")
-            keyPassword = System.getenv("HP_KEY_PASSWORD")
+            storePassword = System.getenv("HAT_KEYSTORE_PASSWORD") ?: System.getenv("HP_KEYSTORE_PASSWORD")
+            keyAlias = System.getenv("HAT_KEY_ALIAS") ?: System.getenv("HP_KEY_ALIAS")
+            keyPassword = System.getenv("HAT_KEY_PASSWORD") ?: System.getenv("HP_KEY_PASSWORD")
         }
     }
     buildTypes {

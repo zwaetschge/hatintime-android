@@ -119,10 +119,11 @@ public class Launcher extends Activity {
         help.setText("Benötigt wird der Ordner deiner eigenen A-Hat-in-Time-PC-Installation "
                 + "(mit Binaries/Win64/HatinTimeGame.exe, Engine und HatinTimeGame/CookedPC; ca. 7,4 GB). "
                 + "Entweder über „Ordner wählen“ den Spielordner importieren, ihn per USB nach\n"
-                + importDir(this).getAbsolutePath() + "\nkopieren, oder das Datenpaket in Plum Hub laden: es landet als ZIP in\n"
+                + importDir(this).getAbsolutePath() + "\nkopieren, oder ein ZIP/ZIP64-Datenpaket über „Datenpaket (ZIP) wählen“ öffnen "
+                + "bzw. in\n"
                 + (obbDir(this) != null ? obbDir(this).getAbsolutePath() : "Android/obb/ch.plum.hatintime")
-                + " und wird beim nächsten Öffnen entpackt. Liegt es in /sdcard/recomp, mit „Datenpaket (ZIP) wählen“ öffnen."
-                + "\n\nSpielstände und Einstellungen: " + userDir(this).getAbsolutePath());
+                + "\nablegen (wird beim nächsten Öffnen automatisch entpackt)."
+                + "\n\nSpielstände und Caches: " + userDir(this).getAbsolutePath());
         col.addView(help);
 
         ScrollView sv = new ScrollView(this);

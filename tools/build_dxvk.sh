@@ -1,6 +1,6 @@
 #!/bin/sh
 # Prepare DXVK native 1.9.2b (gfx/dxvk/prepare.py) and build the static library.
-#   tools/build_dxvk.sh host      -> build/dxvk-host/libhp_dxvk.a   (Linux x86-64, in hp-gfx:1)
+#   tools/build_dxvk.sh host      -> build/dxvk-host/libhp_dxvk.a   (Linux x86-64, in hatintime-build)
 #   tools/build_dxvk.sh android   -> build/dxvk-android/libhp_dxvk.a (NDK arm64)
 set -e
 ROOT=$(cd "$(dirname "$0")/.." && pwd); cd "$ROOT"

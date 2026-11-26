@@ -1,6 +1,6 @@
 #!/bin/sh
 # Linux debug host build: every gen/<Module>/*.c with its own table names, the runtime, host/main.c
-# -> build/host/hphost. Incremental (objects newer than their source are kept). env: JOBS, OPT
+# -> build/host/hathost. Incremental (objects newer than their source are kept). env: JOBS, OPT
 set -e
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 cd "$ROOT"
